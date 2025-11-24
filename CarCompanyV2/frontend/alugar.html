@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Company | Aluguel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+    <nav class="row">
+      <div class="icon-menu col-sm-1 col-1">
+        <h1><img src="images/icon-menu.svg" alt="" style="max-width: 100%"></h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img src="images/logo.png" alt="" style="max-width: 50%">
+      </div>
+      <div class="col-lg-5 col-md-4 col-sm-1 col-1">
+        <ul>
+          <a href="index.html"><li>Carros</li></a>
+          <a href="alugar.html"><li>Aluguel</li></a>
+          <a href="consultas.html"><li>Consultas</li></a>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-1 col-sm-1 col-1"></div>
+      <hr>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container formulario-aluguel">
+
+        <h2>Formulário de Aluguel</h2>
+        <p>Preencha os dados abaixo para concluir o processo de aluguel do veículo.</p>
+
+        <form class="form-box">
+
+            <label for="tipo">Selecione o tipo do registro</label>
+            <select id="tipo" name="tipo">
+                <option>Retirada</option>
+                <option>Devolução</option>
+            </select>
+            <!-- CARRO -->
+            <label for="carro">Selecione o carro</label>
+            <select id="carro" name="carro">
+                <option value="">Carregando...</option>
+            </select>
+
+            <!-- PLACA -->
+            <label for="placa">Selecione a placa</label>
+            <select id="placa" name="placa">
+                <option>QWE-1234</option>
+                <option>ASD-4455</option>
+                <option>ZXC-9080</option>
+            </select>
+
+            <label for="cpf-cliente">CPF Cliente</label>
+            <input type="text" id="cpf-cliente" placeholder="Digite o cpf sem caracteres especiais">
+
+            <label for="func">CPF Funcionario</label>
+            <select id="func" name="func">
+                <option value="">Carregando...</option>
+            </select>
+
+            <label for="estado">Selecione o estado do carro</label>
+            <select id="estado" name="estado">
+                <option>Bom</option>
+                <option>Médio</option>
+                <option>Com Problemas</option>
+            </select>
+
+            <!-- DATAS -->
+            <label for="data-retirada">Data de Retirada</label>
+            <input type="date" id="data-retirada" name="data-retirada">
+
+            <label for="data-devolucao">Data de Devolução</label>
+            <input type="date" id="data-devolucao" name="data-devolucao">
+
+            <!-- DESCONTO -->
+            <label for="desconto">Possui desconto?</label>
+            <select id="desconto" name="desconto">
+                <option>N/A</option>
+                <option>20%</option>
+                <option>30%</option>
+                <option>40%</option>
+            </select>
+
+            <!-- BOTÃO -->
+            <button type="submit" class="btn-confirmar">Confirmar Aluguel</button>
+
+        </form>
+
+    </main>
+    <script src="js/alugar.js"></script>
+</body>
+</html>
